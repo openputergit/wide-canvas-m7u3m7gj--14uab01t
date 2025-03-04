@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CompRental Pro | Professional Computer Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #0061f2 0%, #00a6f2 100%);
+        }
+        .custom-shadow {
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        .hover-scale:hover {
+            transform: scale(1.03);
+        }
+        .service-card {
+            background: linear-gradient(45deg, #ffffff 0%, #f8f9ff 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Topbar -->
+    <div class="bg-gray-900 text-white py-2">
+        <div class="container mx-auto px-4 flex justify-between items-center text-sm">
+            <div class="flex items-center space-x-4">
+                <span><i class="bi bi-telephone"></i> +1 (555) 123-4567</span>
+                <span><i class="bi bi-envelope"></i> info@comprentalpro.com</span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="#" class="hover:text-blue-400"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="hover:text-blue-400"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="hover:text-blue-400"><i class="bi bi-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <h1 class="text-3xl font-bold gradient-bg text-transparent bg-clip-text">CompRental<span class="text-blue-600">Pro</span></h1>
+                </div>
+                <div class="hidden lg:flex space-x-8">
+                    <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Home</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Services</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Products</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Solutions</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Contact</a>
+                </div>
+                <div class="flex items-center space-x-6">
+                    <a href="#" class="text-gray-700 relative">
+                        <i class="bi bi-cart-fill text-xl"></i>
+                        <span class="absolute -top-2 -right-2 bg-blue-600 text-white rounded-full w-5 h-5 text-xs flex items-center justify-center">0</span>
+                    </a>
+                    <a href="#" class="gradient-bg text-white px-6 py-3 rounded-full hover:opacity-90 transition duration-300">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg py-20">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 text-white">
+                    <h2 class="text-5xl font-bold mb-6">Professional Computer Rental Solutions</h2>
+                    <p class="text-xl mb-8 opacity-90">Empower your business with cutting-edge technology rentals. Flexible terms, professional support, and competitive prices.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-white text-blue-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition duration-300">View Products</a>
+                        <a href="#" class="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-blue-600 transition duration-300">Contact Sales</a>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 mt-12 lg:mt-0">
+                    <img src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5" alt="Professional Computers" class="rounded-2xl shadow-2xl hover-scale">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Our Premium Services</h2>
+                <p class="text-gray-600 text-lg">Comprehensive computer rental solutions for every business need</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="service-card p-8 rounded-xl custom-shadow hover-scale">
+                    <div class="w-16 h-16 gradient-bg rounded-lg flex items-center justify-center mb-6">
+                        <i class="bi bi-laptop text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Business Computers</h3>
+                    <p class="text-gray-600">High-performance workstations and laptops for professional use</p>
+                </div>
+                <div class="service-card p-8 rounded-xl custom-shadow hover-scale">
+                    <div class="w-16 h-16 gradient-bg rounded-lg flex items-center justify-center mb-6">
+                        <i class="bi bi-server text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Server Solutions</h3>
+                    <p class="text-gray-600">Reliable server infrastructure for your business needs</p>
+                </div>
+                <div class="service-card p-8 rounded-xl custom-shadow hover-scale">
+                    <div class="w-16 h-16 gradient-bg rounded-lg flex items-center justify-center mb-6">
+                        <i class="bi bi-headset text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">24/7 Support</h3>
+                    <p class="text-gray-600">Round-the-clock technical assistance and maintenance</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold mb-6">Why Choose CompRentalPro?</h2>
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 gradient-bg rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="bi bi-check2-circle text-xl text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">Latest Technology</h3>
+                                <p class="text-gray-600">Access to the newest computer models and configurations</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 gradient-bg rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="bi bi-shield-check text-xl text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">Guaranteed Quality</h3>
+                                <p class="text-gray-600">All equipment thoroughly tested and maintained</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 gradient-bg rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="bi bi-cash-stack text-xl text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">Flexible Pricing</h3>
+                                <p class="text-gray-600">Competitive rates with customizable rental periods</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1515378960530-7c0da6231fb1" alt="Features" class="rounded-2xl shadow-2xl hover-scale">
+                    <div class="absolute -bottom-8 -left-8 bg-white p-6 rounded-xl custom-shadow">
+                        <div class="flex items-center space-x-4">
+                            <div class="text-4xl font-bold text-blue-600">500+</div>
+                            <div class="text-gray-600">Satisfied<br>Clients</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="gradient-bg py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-white mb-6">Ready to Get Started?</h2>
+            <p class="text-xl text-white opacity-90 mb-8">Contact our team for a personalized rental solution</p>
+            <a href="#" class="bg-white text-blue-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition duration-300">Schedule Consultation</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6">CompRentalPro</h3>
+                    <p class="text-gray-400">Professional computer rental solutions for businesses and individuals.</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Products</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-6">Contact Info</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-center space-x-3">
+                            <i class="bi bi-geo-alt"></i>
+                            <span class="text-gray-400">123 Business Ave, Tech City</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="bi bi-telephone"></i>
+                            <span class="text-gray-400">+1 (555) 123-4567</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="bi bi-envelope"></i>
+                            <span class="text-gray-400">info@comprentalpro.com</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-6">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Subscribe for updates and offers</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l-full w-full">
+                        <button class="gradient-bg px-6 rounded-r-full hover:opacity-90">
+                            <i class="bi bi-send"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-800 text-center">
+                <p class="text-gray-400">&copy; 2023 CompRentalPro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Cart functionality
+        const cartButton = document.querySelector('.bi-cart-fill');
+        let cartCount = 0;
+        
+        cartButton.parentElement.addEventListener('click', (e) => {
+            e.preventDefault();
+            cartCount++;
+            cartButton.nextElementSibling.textContent = cartCount;
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+<script>document.body.addEventListener('wheel', e => { if (!e.ctrlKey) return; e.preventDefault(); return }, { passive: false })</script>
+	</body>
+</html>
